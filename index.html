@@ -1,1 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayur Saini | Senior Software Engineer & AI Architect</title>
+  <meta name="description" content="Portfolio of Mayur Saini - Senior Software Engineer specializing in Flutter, Mobile Architecture, Enterprise Integrations, and Generative AI." />
 
+  <!-- Google Fonts & Tailwind CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              cyan: '#06b6d4',
+              blue: '#3b82f6',
+              violet: '#8b5cf6',
+              emerald: '#10b981',
+              dark: '#090d16',
+              card: '#0f172a',
+              border: '#1e293b'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass-nav {
+      background: rgba(9, 13, 22, 0.85);
+      backdrop-filter: blur(12px);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-glow:hover {
+      box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.15);
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+  </style>
+</head>
+
+<body class="bg-brand-dark text-slate-300 font-sans selection:bg-cyan-500/20 selection:text-cyan-300 antialiased">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-brand-border">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#home" class="font-bold text-lg text-white font-mono flex items-center gap-2">
+        <span class="text-cyan-400">&gt;</span> mayur_saini<span class="animate-pulse text-cyan-400">_</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#about" class="hover:text-cyan-400 transition">About</a>
+        <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+        <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
+        <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+      </nav>
+      <a href="mailto:mayursaini1987@gmail.com" class="text-xs md:text-sm font-semibold px-4 py-2 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500 hover:text-black transition">
+        Get in Touch
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-36 pb-20 px-6 max-w-6xl mx-auto min-h-[90vh] flex flex-col justify-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 w-fit mb-6 text-xs font-mono text-cyan-300">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+      Available for Principal Mobile & GenAI Engineering Roles
+    </div>
+    
+    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight max-w-4xl">
+      Building robust mobile apps & <span class="gradient-text">production GenAI</span> systems.
+    </h1>
+
+    <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed">
+      Senior Software Engineer with <strong>9+ years</strong> of architecture experience across Flutter, Android, Python, and Enterprise Cloud integrations[cite: 1] — specializing in production-ready <strong>RAG & LLM agents</strong>[cite: 1].
+    </p>
+
+    <!-- Highlights Badges -->
+    <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl">
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-brand-border">
+        <div class="text-2xl font-bold text-white font-mono">9+ Yrs</div>
+        <div class="text-xs text-slate-400 mt-1">Total Engineering[cite: 1]</div>
+      </div>
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-brand-border">
+        <div class="text-2xl font-bold text-cyan-400 font-mono">10+</div>
+        <div class="text-xs text-slate-400 mt-1">Shipped Production Apps[cite: 2]</div>
+      </div>
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-brand-border">
+        <div class="text-2xl font-bold text-purple-400 font-mono">Gen AI</div>
+        <div class="text-xs text-slate-400 mt-1">RAG, LLM & Microservices[cite: 1]</div>
+      </div>
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-brand-border">
+        <div class="text-2xl font-bold text-emerald-400 font-mono">Multi-Domain</div>
+        <div class="text-xs text-slate-400 mt-1">Health, Fitness & EdTech[cite: 1, 2]</div>
+      </div>
+    </div>
+
+    <div class="mt-10 flex flex-wrap gap-4">
+      <a href="#projects" class="px-6 py-3 rounded-lg bg-cyan-500 text-slate-950 font-semibold text-sm hover:bg-cyan-400 transition">
+        Explore Deliverables
+      </a>
+      <a href="https://linkedin.com/in/mayur-saini-17142767" target="_blank" rel="noreferrer" class="px-6 py-3 rounded-lg bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-sm hover:bg-slate-700 transition">
+        LinkedIn Profile
+      </a>
+    </div>
+  </section>
+
+  <!-- Technical Skills -->
+  <section id="skills" class="py-20 px-6 max-w-6xl mx-auto border-t border-brand-border">
+    <div class="mb-12">
+      <span class="text-xs font-mono uppercase tracking-wider text-cyan-400">Capabilities</span>
+      <h2 class="text-3xl font-bold text-white mt-1">Technical Stack & Expertise</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="p-6 rounded-2xl bg-brand-card border border-brand-border transition card-glow">
+        <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center font-mono font-bold mb-4">
+          AI
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-2">Generative AI & LLMs</h3>
+        <p class="text-xs text-slate-400 mb-4">Production-grade AI architectures, embeddings, and workflow automations[cite: 1].</p>
+        <ul class="text-xs font-mono space-y-2 text-slate-300">
+          <li>• RAG, SentenceTransformers, Cosine Similarity</li>
+          <li>• LangChain, CrewAI, OpenAI, Gemini[cite: 1]</li>
+          <li>• Prompt Engineering & Function Calling[cite: 1]</li>
+          <li>• Intelligent Document Intelligence & PyPDF[cite: 1]</li>
+          <li>• Local SLMs & Voice AI (Porcupine)</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p-6 rounded-2xl bg-brand-card border border-brand-border transition card-glow">
+        <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-mono font-bold mb-4">
+          FL
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-2">Mobile & Cross-Platform</h3>
+        <p class="text-xs text-slate-400 mb-4">Scalable architecture across iOS, Android, and Web platforms[cite: 1].</p>
+        <ul class="text-xs font-mono space-y-2 text-slate-300">
+          <li>• Flutter, Dart, Android Native, Xamarin[cite: 1, 2]</li>
+          <li>• State: Provider, Riverpod, Clean Architecture[cite: 1]</li>
+          <li>• Multi-level Nested Navigation & AndroidX</li>
+          <li>• Dynamic Video Quality Switching & Streaming</li>
+          <li>• Offline Caching, Syncfusion, Local Repositories</li>
+        </ul>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-6 rounded-2xl bg-brand-card border border-brand-border transition card-glow">
+        <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center font-mono font-bold mb-4">
+          CL
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-2">Cloud, Backend & Security</h3>
+        <p class="text-xs text-slate-400 mb-4">Enterprise connectors, async job runners, and serverless pipelines[cite: 1].</p>
+        <ul class="text-xs font-mono space-y-2 text-slate-300">
+          <li>• Azure Durable Functions & Storage Queues[cite: 1]</li>
+          <li>• Microsoft Graph API, Azure AD, Dataverse[cite: 1]</li>
+          <li>• FastAPI, REST API Integrations, Python[cite: 1]</li>
+          <li>• Firebase (Auth, Firestore, Cloud Functions)[cite: 1, 2]</li>
+          <li>• White Box & Penetration Testing[cite: 1, 2]</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience -->
+  <section id="experience" class="py-20 px-6 max-w-6xl mx-auto border-t border-brand-border">
+    <div class="mb-12">
+      <span class="text-xs font-mono uppercase tracking-wider text-cyan-400">Career History</span>
+      <h2 class="text-3xl font-bold text-white mt-1">Professional Experience</h2>
+    </div>
+
+    <div class="space-y-8 relative before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-slate-800">
+      
+      <!-- Role 1 -->
+      <div class="relative pl-10">
+        <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-cyan-400 ring-4 ring-slate-900"></div>
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-lg font-bold text-white">Senior Software Engineer — Magic Workshop (Affiliate of Pursuit Software)[cite: 1]</h3>
+            <span class="text-xs font-mono text-cyan-400">Dec 2024 – Mar 2026 | Kolkata[cite: 1]</span>
+          </div>
+          <p class="text-sm text-slate-400 mb-4">Specialized in Python backend microservices, RAG architectures, and Generative AI workflows[cite: 1].</p>
+          <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside">
+            <li>Architected and shipped <span class="text-white font-medium">Magic Audit</span>: Document automation engine powered by LangChain, OpenAI, and custom RAG[cite: 1].</li>
+            <li>Designed and deployed healthcare automation solutions (<span class="text-white font-medium">Magic Health</span>) leveraging Gemini, OpenAI, and prompt strategies[cite: 1].</li>
+            <li>Built asynchronous task engines using Azure Durable Functions, Azure Storage Queues, and status-polling REST APIs[cite: 1].</li>
+            <li>Conducted reference benchmark evaluations against AI outputs to refine accuracy, semantic relevance, and response consistency.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Role 2 -->
+      <div class="relative pl-10">
+        <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-slate-900"></div>
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-lg font-bold text-white">Software Engineer — Pursuit Software[cite: 1]</h3>
+            <span class="text-xs font-mono text-slate-400">Jan 2023 – Dec 2024 | Kolkata[cite: 1]</span>
+          </div>
+          <p class="text-sm text-slate-400 mb-4">Enterprise application engineering across mobile, tablet, and web in healthcare and HR platforms[cite: 1].</p>
+          <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside">
+            <li>Engineered applications for healthcare (DrugsEze) and talent acquisition (TalentPool) with Flutter and Provider[cite: 1].</li>
+            <li>Modernized legacy Flutter platforms, upgraded dependencies, and resolved breaking framework updates.</li>
+            <li>Integrated enterprise authentication with Azure AD, Microsoft Graph APIs, and PowerApps Dataverse SQL connectors[cite: 1].</li>
+            <li>Implemented offline voice processing using Porcupine wake-word listeners and custom local data-extraction algorithms.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Role 3 -->
+      <div class="relative pl-10">
+        <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-slate-900"></div>
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-lg font-bold text-white">Senior Android / Flutter Developer — ByteBonding Technologies[cite: 2]</h3>
+            <span class="text-xs font-mono text-slate-400">Jul 2019 – Dec 2022 | Jabalpur[cite: 2]</span>
+          </div>
+          <p class="text-sm text-slate-400 mb-4">Led development across education, fitness hardware, and enterprise mobile projects[cite: 2].</p>
+          <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside">
+            <li>Architected <span class="text-white font-medium">Cram Crew</span> using nested multi-tier tab layouts, Syncfusion calendar schedulers, and strict Role-Based Access Control (RBAC).</li>
+            <li>Engineered <span class="text-white font-medium">MyCloudFitness (MCF)</span>: Integrated IoT fitness equipment, dynamic network bandwidth monitoring for adaptive video streaming, and AndroidX navigation[cite: 2].</li>
+            <li>Built and deployed real-time backends for <span class="text-white font-medium">Home2aT</span> on Firebase (Firestore, Auth, Functions)[cite: 2].</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Role 4 -->
+      <div class="relative pl-10">
+        <div class="absolute left-1.5 top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-slate-900"></div>
+        <div class="p-6 rounded-2xl bg-brand-card border border-brand-border">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-lg font-bold text-white">Frontend Application Developer — Cognic Systems[cite: 2]</h3>
+            <span class="text-xs font-mono text-slate-400">Sep 2017 – Jun 2019 | Jabalpur[cite: 2]</span>
+          </div>
+          <p class="text-sm text-slate-400 mb-4">Xamarin Native and mobile healthcare event management development[cite: 2].</p>
+          <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside">
+            <li>Developed the SingHealth Events application ecosystem[cite: 2].</li>
+            <li>Conducted white-box and penetration testing to fulfill enterprise compliance[cite: 2].</li>
+            <li>Recognized as <strong>Best Performer of the Quarter</strong>[cite: 2].</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects & External Work -->
+  <section id="projects" class="py-20 px-6 max-w-6xl mx-auto border-t border-brand-border">
+    <div class="mb-12">
+      <span class="text-xs font-mono uppercase tracking-wider text-cyan-400">Featured Platforms</span>
+      <h2 class="text-3xl font-bold text-white mt-1">Products & Implementations</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Entrust AI / Magic Audit -->
+      <div class="p-6 rounded-2xl bg-brand-card border border-brand-border flex flex-col justify-between card-glow">
+        <div>
+          <div class="text-xs font-mono text-purple-400 mb-2">Enterprise GenAI & Document Intelligence</div>
+          <h3 class="text-xl font-bold text-white mb-2">Entrust AI / Magic Audit</h3>
+          <p class="text-sm text-slate-400 mb-4">
+            RAG-driven document audit workflows, extracting validation evidence through embeddings, LLMs, and Azure Durable microservices[cite: 1].
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">LangChain</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">RAG</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">Azure Functions</span>
+          </div>
+        </div>
+        <a href="https://entrustai.io/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-cyan-400 hover:text-cyan-300">
+          Visit Entrust AI ↗
+        </a>
+      </div>
+
+      <!-- Magic Health -->
+      <div class="p-6 rounded-2xl bg-brand-card border border-brand-border flex flex-col justify-between card-glow">
+        <div>
+          <div class="text-xs font-mono text-purple-400 mb-2">Healthcare AI</div>
+          <h3 class="text-xl font-bold text-white mb-2">Magic Health</h3>
+          <p class="text-sm text-slate-400 mb-4">
+            Healthcare conversational automation and clinical data routing using prompt engineering, OpenAI, and Google Gemini[cite: 1].
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">Gemini API</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">OpenAI</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">Python</span>
+          </div>
+        </div>
+        <a href="https://magichealth.io/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-cyan-400 hover:text-cyan-300">
+          Visit Magic Health ↗
+        </a>
+      </div>
+
+      <!-- Cram Crew -->
+      <div class="p-6 rounded-2xl bg-brand-card border border-brand-border flex flex-col justify-between card-glow">
+        <div>
+          <div class="text-xs font-mono text-cyan-400 mb-2">EdTech & Scheduling</div>
+          <h3 class="text-xl font-bold text-white mb-2">Cram Crew Mobile</h3>
+          <p class="text-sm text-slate-400 mb-4">
+            Mobile tutoring system featuring Syncfusion calendars, object versioning for offline data sync, and nested tab architectures.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">Flutter</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">Provider</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">RBAC</span>
+          </div>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.cramcrew.android&hl=en_IN" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-cyan-400 hover:text-cyan-300">
+          View on Google Play ↗
+        </a>
+      </div>
+
+      <!-- MyCloudFitness -->
+      <div class="p-6 rounded-2xl bg-brand-card border border-brand-border flex flex-col justify-between card-glow">
+        <div>
+          <div class="text-xs font-mono text-cyan-400 mb-2">Fitness Tech & Adaptive Streaming</div>
+          <h3 class="text-xl font-bold text-white mb-2">MyCloudFitness (MCF)</h3>
+          <p class="text-sm text-slate-400 mb-4">
+            Hardware-integrated fitness companion app with adaptive video bitrates, IoT Bluetooth synchronization, and Unity3D rendering[cite: 2].
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">Android</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">Adaptive Streaming</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">IoT / BLE</span>
+          </div>
+        </div>
+        <a href="https://www.amazon.com/stores/MyCloudFitness/page/1DA0FD37-BAB2-4CF0-BD90-A7B38295A060" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-sm font-semibold text-cyan-400 hover:text-cyan-300">
+          View Brand Showcase ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <section id="contact" class="py-20 px-6 max-w-6xl mx-auto border-t border-brand-border text-center">
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Let’s build something together.</h2>
+    <p class="mt-4 text-slate-400 max-w-xl mx-auto">
+      Whether you need robust Flutter architecture or production GenAI systems, my inbox is open.
+    </p>
+
+    <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <a href="mailto:mayursaini1987@gmail.com" class="px-6 py-3 rounded-lg bg-cyan-500 text-slate-950 font-semibold text-sm hover:bg-cyan-400 transition">
+        mayursaini1987@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/mayur-saini-17142767" target="_blank" rel="noreferrer" class="px-6 py-3 rounded-lg bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-sm hover:bg-slate-700 transition">
+        LinkedIn Profile
+      </a>
+    </div>
+
+    <div class="mt-16 text-xs text-slate-500 font-mono">
+      © 2026 Mayur Saini • Jabalpur, M.P., India • Built with Tailwind CSS[cite: 1]
+    </div>
+  </section>
+
+</body>
+</html>
